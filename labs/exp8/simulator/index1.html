@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd Parity Generator</title>
+
+    <!--JSplumb-->
+    <link rel="stylesheet" href="node_modules\jsplumb\css\jsplumbtoolkit-defaults.css">
+    <script src="node_modules\jsplumb\dist\js\jsplumb.min.js"></script>
+
+    <script src="node_modules\lib\jquery-latest.js"></script>
+    <script src="node_modules\lib\jquery-ui\js\jquery-ui-latest.js"></script>
+    <script src="node_modules\lib\jquery.jsPlumb-1.3.9-all-min.js"></script>
+
+
+    <!--jQuery-->
+    <script src="node_modules\jquery\dist\jquery.min.js"></script>
+
+    <!--JS files-->
+    <script src="script2.js"></script>
+    <script src="graph.js"></script> 
+
+    <!--CSS files-->
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+
+    <div class="sim">
+        <h1 id="header">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Odd Parity Generator</h1>
+    </div>
+      <div class="dropdown" >             <!-- div for instructions button-->
+          <button id="instruction" onclick="myFunction()"  class="dropbtn">INSTRUCTIONS</button>
+  <div id="myDropdown" class="dropdown-content">
+    
+                     <b>1.</b> Click on the component button to place the component on the table.<br>
+                     <b>2.</b> Make connections as per the circuit diagram and pin diagram of the ICs.<br>
+                     <center><img src="images/image3ins.png" height="100px" width="300px"><br>
+                        Fig: Circuit diagram of even parity generator.<br><br>
+                     <img src="images/image2ins.png" height="210px" width="160px">
+                     <img src="images/image4ins.png" height="210px" width="160px"><br>
+                        Fig: Pin diagram of IC-7486 and IC-7404.</center><br>
+                     <b>4.</b> Feed input <b>A</b> and <b>B</b> to one gate of IC and input <b>C</b> to another gate.<br>
+                     <b>6.</b> Click on '<b>Check Connections</b>' button. If connections are right, the '<b>Start Simulation</b>' button will become active. Click on it to start simulation.<br>
+                     <b>7.</b> Click on the toggle buttons '<b>A</b>', '<b>B</b>' and '<b>C</b>' to perform simulation.
+    </div>
+</div>
+ 
+       
+
+            <div class="border" id="mid">
+
+                    <div id="board">
+                       <div class="ic" id="ic74513" draggable="true"><img src="images/ic.png" id="ic74513img" height="47px" width="96px"></div>
+       
+                        <div class="ic" id="ic7404" draggable="true"> <img src="images/ic1.png" id="ic7404img" height="45px" width="100px"> </div>
+             <!--         <div class="ic" id="ic7404" draggable="true"></div>-->
+                     <div id="led" draggable="true"><img src="images/bulboff.png" id="led2" width="130px"height="90px">
+                     <label style="font-size: 18px; background-color: #fff; border-radius: 4px; color: black; position: absolute; padding: 2px; top: -22px;left:48px;">P</label>
+
+                     <label style="font-size: 22px; color: red; position: absolute; top: 78px;left:37px; font-weight: bolder;">+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-</label>
+                     </div>
+                     <!--<div id="led1" draggable="true"> <img src="images/led.png" id="led3" width="130px"height="90px"> <label style="font-size: 18px; background-color: #fff; border-radius: 4px; padding: 2px; color: black; position: absolute; top: -22px;left:10px;">B<sub>out</sub> </label>
+                     <label style="font-size: 22px; color: red; position: absolute; top: 78px;left:37px;font-weight: bolder;">+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-</label>
+                     </div>-->
+                     	
+                    </div>
+             
+
+                    <div id="supply" draggable="true"><img src="images/supply.png" id="powersup" height="100px" width="155px"/></div>
+                    
+                    <div id="inputs" draggable="true">
+                        <label id="a" > A </label>
+                        <div id="input_A" onclick="toggle_A()"><img src="images/toggleoff1.png" id="switch1" width="40px"height="70px" onmouseover="this.style.cursor='pointer'"></div>
+                        <div id="input_B" onclick="toggle_B()"><img src="images/toggleoff1.png" id="switch2" width="40px"height="70px"onmouseover="this.style.cursor='pointer'"></div>
+                        <label id="b">B </label>
+                        <div id="input_C" onclick="toggle_C()"><img src="images/toggleoff1.png" id="switch3" width="40px"height="70px"onmouseover="this.style.cursor='pointer'"></div>
+                        <label id="c">C</label>
+                    </div>
+
+
+
+
+         
+            </div>
+
+       
+          
+      
+       <fieldset class="components">
+                        <legend><b style="font-size: 16">Components</b></legend>    
+                        <button id="breadbutton" onclick="breadboard()" disabled>Breadboard</button>
+                        <button id="supplybutton" onclick="supply()" disabled>Power Supply</button><button id="switchbutton" onclick="inputs()" disabled>Toggle Switches</button>
+                    
+                    
+                        <button id="ic1button" onclick="ic74513()"disabled>IC-7486</button>
+                       <button id="ic2button" onclick="ic7404()" disabled>IC-7404</button>
+                        
+            
+
+                        <button id="ledbutton" onclick="led1();" disabled>LED</button></br>
+
+              <button id="checkbutton" onclick="checkCircuit()"disabled>Check<br>Connections</button>
+
+              <button id="startbutton" onclick="start_simulation()"disabled>Start</br>Simulation</button>
+
+              <button id="resetbutton" onclick="resetCircuit()"disabled>Reset<br> </button>
+
+
+        
+        
+   </fieldset> 
+     <div class="mytable">  <!--truth table heading-->
+                    <h3 align="center" style="font-size:18px;"><u>TRUTH TABLE</u></br></br>Component buttons will remain inactive until Truth-Table is filled correctly.</h3>
+                    <table id="table" background-color="white" border="2px">  
+                         <!--  table for full subtractor -->
+                        <tr style="background-color: #3c8bcd">
+                            <th width="350px"> &nbsp;  &nbsp;INPUTS     &nbsp;</br> A  &nbsp;  &nbsp;&nbsp; &nbsp; B&nbsp;   &nbsp;  &nbsp;  &nbsp; C  </th>
+                            
+                            <th> PARITY BIT </br> P  </th>
+                        </tr>
+                        <tr> 
+                            <th>0    &nbsp;   &nbsp;   &nbsp;  &nbsp;  &nbsp; 0    &nbsp;   &nbsp; &nbsp;   &nbsp;   &nbsp;0 </th>
+                            
+                            
+                                <th><input style="text-align: center;color: red; font-weight:bolder" type="text"  class="cell" id="cell1" maxlength="1"  /></th>
+                               
+                        </tr>
+                        <tr>
+                            <th>0   &nbsp;    &nbsp;   &nbsp;   &nbsp; &nbsp; 0   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;1</th>
+                            
+                                <th><input style="text-align: center;color: red; font-weight:bolder" type="text"  class="cell" id="cell2" maxlength="1" /></th>
+                              
+                        </tr>
+                        <tr>
+                            <th>0   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;1   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;0</th>
+                            
+                                <th><input style="text-align: center;color: red; font-weight:bolder" type="text" class="cell" id="cell3" maxlength="1" /></th>
+                                
+                        </tr>
+                        <tr>
+                            <th>0  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;1  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;1</th>
+                        
+                               <th><input style="text-align: center;color: red; font-weight:bolder" type="text" class="cell" id="cell4"   maxlength="1" /></th>
+                              
+                        </tr>
+                        <tr>
+                            <th>1   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;0  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;0</th>
+                            
+                                <th><input style="text-align: center;color: red; font-weight:bolder" type="text" class="cell" id="cell5"  maxlength="1" /></th>
+                               
+                        </tr>
+                        <tr>
+                            <th>1  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;0  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;1</th>
+                            
+                                <th><input style="text-align: center;color: red; font-weight:bolder" type="text" class="cell" id="cell6" maxlength="1" /></th>
+                                
+                        </tr>
+                        <tr>
+                            <th>1  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;1  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;0</th>
+                            
+                                <th><input style="text-align: center;color: red; font-weight:bolder" type="text" class="cell" id="cell7" maxlength="1" /></th>
+                                
+                        </tr>
+                        <tr>
+                            <th>1  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;1  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;1</th>
+                            
+                                <th><input style="text-align: center;color: red; font-weight:bolder" type="text"  class="cell" id="cell8" maxlength="1" /></th>
+                                
+                        </tr>
+                    </table>
+                    <button id="check1" onclick="check1()" onmouseover="this.style.cursor='pointer'"> CHECK</button>    <!-- check button-->
+                    <button id="reset1" onclick="reset1()" onmouseover="this.style.cursor='pointer'">RESET</button>     <!-- RESET button-->
+                </div>
+               
+
+
+
+    <script src="script3.js"></script>
+
+    <footer style="font-size: 20px;font-family: sans-serif;">&copy;Vlabs IIT Roorkee.</footer>
+</body>
+
+</html>

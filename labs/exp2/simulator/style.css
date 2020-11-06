@@ -1,0 +1,844 @@
+
+.sim{
+    position: absolute;
+    width: 1330px;
+    height: 85px;
+    background: #3c8dbc;
+    color: #fff;
+    text-align: center;
+    box-shadow: 2px 4px 6px #262626;
+    margin-top: -8px;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-size: 42px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+
+#mid {
+
+    position: absolute;
+    height: 470px;
+    width: 1070px;
+    margin: 117px 0px 0px 0px;
+    box-shadow: 3px 4px 6px #262626;
+    border-radius: 6px;
+    background-color: #f2f2f2;
+  	background-image: url('images/cover.png');
+}
+.mytable
+{
+    position: absolute;
+    top: 100px;
+    left: 920px;
+}
+#table
+{position: absolute;
+    width: 340px;
+    height: 380px;
+    top: 100px;
+    left: 50px;
+
+}
+th
+{
+width: 70px;
+height: 30px;
+}
+.cell
+{
+    width: 50px;
+    height: 20px;
+    border:1px solid black;
+    border-radius: 4px;
+    text-align: center;
+}
+.cell1
+{
+    width: 70px;
+    height: 20px;
+    border:1px solid black;
+    border-radius: 4px;
+    text-align: center;
+}
+
+#board {
+    position: absolute;
+    margin: 5px 0px 5px 38px;
+    height: 300px;
+    width: 900px;
+    border-radius: 5px;
+    border: 3px solid #d6d3d3;
+    box-shadow: 3px 4px 6px #888888;
+    background-image: url('images/board.png');
+    display: block;
+    visibility: hidden;
+}
+
+
+/* Components */
+
+#led {
+
+    background-size: cover;
+    display: inline-block;
+    visibility: hidden;
+    position: absolute;
+    top: 57px;
+    left: 736px;
+}
+#led1 {
+    background-size: cover;
+    display: inline-block;
+    visibility: hidden;
+        position: absolute;
+    top: 57px;
+    left: 628px;
+}
+#supply {
+    height: 110px;
+    width: 192px;
+    background-image: url('images/supply.png');
+    background-size: cover;
+    display: inline-block;
+    visibility: hidden;
+    margin: 330px 0px 5px 50px;
+
+}
+
+
+
+
+#ic741{position: absolute;
+    height: 154px;
+    width: 57px;
+    top:74px;
+    left:387px;
+   /* background-image: url('images/ic7408.png');*/
+    display: inline-block;
+    visibility: hidden;
+}
+#ic1
+{
+    position: absolute;
+    top:5px;
+}
+#inputs {
+    height: 40px;
+    width: 110px;   
+    display: inline-block;
+    visibility: hidden;
+}
+
+
+
+/* Right Components Code here */
+
+#instruction:hover {
+        background-color: #7CFC00;
+        color: #000;
+}
+    #instruction
+
+    {   top:30px;
+        margin-left: 1090px;
+        position: absolute;
+        width:150px;
+        height:30px;
+        color: #fff;
+        background-color: #262626;
+        border-radius: 6px;
+        font-size: 18px;
+    }
+    
+.dropdown-content {
+  display: none;
+  position: absolute;
+  margin-left:910px;
+  margin-top: 50px;
+  background-color: #fff;
+  width: 400px;
+  height: 500px;
+  border:4px;
+  border-radius: 4px;
+  font-family: sans-serif;
+  font-size: 15px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,1,1);
+  z-index: 1;
+  padding: 10px;
+  overflow: auto;
+}
+.dropdown-content a:hover {background-color: #ddd}
+.show {display:block;}
+a
+{
+    color: red;
+}
+.components                                            /*      fieldset position  */
+{   position: absolute;
+    display: inline-block;
+    width:208px;
+    height:450px;
+    border-radius: 5px;
+    visibility: hidden;
+    top:120px;
+    left:1092px;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+#breadbutton                                                      /*     breadboard button  */
+{   width: 150px;
+    height:40px;
+    background-color: #262626;
+    border-radius: 10px;
+    position: absolute;
+    margin-top: 15px;
+    margin-left:25px;
+    color: #fff;
+}
+#breadbutton:hover          
+{
+    background-color:#7CFC00;
+    color:#000;
+
+}
+
+#ic2button                                           /*      ic button  */
+{width: 150px;
+    height:40px;
+    background-color: #262626;
+    border-radius: 10px;
+      position: absolute;
+      margin-top: 95px;
+     margin-left:25px;
+     color: #fff;
+}
+#ic2button:hover                                       
+{
+    background-color:#7CFC00;
+    color:#000;
+
+}
+
+#supplybutton                                            /*      supply button  */
+{ width: 150px;
+  height:40px;
+  background-color: #262626;
+  border-radius: 10px;
+  position: absolute;
+  margin-top: 35px;
+  margin-left:25px;
+  color: #fff;
+}
+#supplybutton:hover
+{
+    background-color:#7CFC00;
+    color:#000;
+
+}
+#switchbutton                                         /*    switch button   */
+{ width: 150px;
+  height:60px;
+  background-color: #262626;
+  border-radius: 10px;
+  position: absolute;
+  margin-top: 55px;
+  margin-left:25px;
+  color: #fff;
+}
+#switchbutton:hover
+{
+    background-color:#7CFC00;
+    color:#000;
+
+}
+#capbutton                                                   /*      led button   */
+{   width: 150px;
+    height:60px;
+    background-color: #262626;
+    border-radius: 10px; 
+    position: absolute;
+    margin-top: 115px;
+    margin-left:25px;
+    color: #fff;
+}
+#capbutton:hover
+{
+    background-color:#7CFC00;
+    color:#000;
+
+}
+
+#resistancebutton                                                   /*      led button   */
+{   width: 150px;
+    height:40px;
+    background-color: #262626;
+    border-radius: 10px; 
+    position: absolute;
+    margin-top: 155px;
+    margin-left:25px;
+    color: #fff;
+}
+#resistancebutton:hover
+{
+    background-color:#7CFC00;
+    color:#000;
+
+}
+#myrange                                                 /*      led button   */
+{   width: 150px;
+    height:40px;
+    border-radius: 10px; 
+    position: absolute;
+    margin-top: 175px;
+    margin-left:25px;
+}
+#myrange1                                                 /*      led button   */
+{   width: 150px;
+    height:40px;
+    border-radius: 10px; 
+    position: absolute;
+    margin-top:12px;
+    margin-left:20px;
+}
+#myrange2                                                 /*      led button   */
+{   width: 150px;
+    height:40px;
+    border-radius: 10px; 
+    position: absolute;
+    margin-top:27px;
+    margin-left:5px;
+}
+#myrange3                                                 /*      led button   */
+{   width: 150px;
+    height:40px;
+    border-radius: 10px; 
+    position: absolute;
+    margin-top:215px;
+    margin-left:25px;
+}
+#myrange4                                                 /*      led button   */
+{   width: 150px;
+    height:40px;
+    border-radius: 10px; 
+    position: absolute;
+    margin-top:249px;
+    margin-left:25px;
+}
+
+#v1
+{
+    position: absolute;
+    margin-top: 186px;
+    margin-left: 05px;
+    font-size: 15px;
+    font-weight: bolder;
+}
+#v2
+{
+    position: absolute;
+    margin-top: 226px;
+    margin-left: 05px;
+    font-size: 15px;
+    font-weight: bolder;
+}
+#v3
+{
+    position: absolute;
+    margin-top: 266px;
+    margin-left: 05px;
+    font-size: 15px;
+    font-weight: bolder;
+}
+#v4
+{
+    position: absolute;
+    margin-top: 266px;
+    margin-left: 05px;
+    font-size: 15px;
+    font-weight: bolder;
+}
+#checkbutton                                      /*      check connections buttton  */
+{   width: 150px;
+    height:50px;
+    
+    background-color: #ffff99;
+    border-radius: 10px;
+    position: absolute;
+    top:610px;
+    left:50px;
+     font-weight: bolder;
+}
+#checkbutton:hover                                  
+{
+    background-color:#7CFC00;
+    color:white;
+
+}
+#startbutton                                          /*      start button   */
+{ width: 150px;
+    height:50px;
+    background-color: #ccff99 ;
+    border-radius: 10px;
+      position: absolute;
+    top:610px;
+    left: 250px;
+    font-weight: bolder;
+
+}
+#startbutton:hover
+{
+    background-color:#7CFC00;
+    color:white;
+
+}
+
+#resetbutton                           /*reset button*/
+{ width: 150px;
+    height:50px;
+    background-color: #ff9999 ;
+    border-radius: 10px;
+      position: absolute;
+    top:610px;
+    left: 450px;
+     font-weight: bolder;
+
+}
+#resetbutton:hover 
+{
+    background-color:#7CFC00;
+    color:white;
+
+}
+#addtable                          /*reset button*/
+{ width: 150px;
+    height:50px;
+    background-color: #ff9999 ;
+    border-radius: 10px;
+      position: absolute;
+    top: 610px;
+    left: 650px;
+    font-size: 18px;
+
+}
+#addtable:hover 
+{
+    background-color:#7CFC00;
+    color:white;
+
+}
+
+h3
+{
+    position: absolute;
+    font-family:sans-serif;
+    width:380px; 
+    margin-left: 20px;
+    font-style: bold;
+
+}
+button
+{
+    font-size: 19px;
+    font-style: bold;
+       cursor: pointer;
+       font-family: serif;
+}
+footer
+{
+    position: absolute;
+    left:600px;
+    font-size: 18px;
+    bottom: -600px;
+  }
+
+u
+{
+    font-family: sans-serif;
+}
+strong
+{position: absolute;
+     top: 350px;
+    font-size: 20px; 
+     margin-left:70px;
+}
+.button
+{
+    margin-top: 170px;
+    font-size: 15px;
+     margin-left:70px;
+border-radius: 4px;
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    background-color: white;
+
+
+}
+.button:hover
+{
+    background-color: orange;
+}
+
+#resistance1
+{
+    background-size: cover;
+    display: inline-block;
+    visibility: hidden;
+    position: absolute;
+    top: 124px;
+    left: 112px;
+}
+#resistance2
+{
+    background-size: cover;
+    display: inline-block;
+    visibility: hidden;
+    position: absolute;
+    top: 124px;
+    left: 152px;
+}
+#resistance3
+{
+    background-size: cover;
+    display: inline-block;
+    visibility: hidden;
+    position: absolute;
+    top: 124px;
+    left: 192px;
+}
+#resistance4
+{
+    background-size: cover;
+    display: inline-block;
+    visibility: hidden;
+    position: absolute;
+    top: 124px;
+    left: 232px;
+}
+#resistance5
+{
+    background-size: cover;
+    display: inline-block;
+    visibility: hidden;
+    position: absolute;
+    top: 124px;
+    left: 192px;
+}
+#resistance6
+{
+    background-size: cover;
+    display: inline-block;
+    visibility: hidden;
+    position: absolute;
+    top: 124px;
+    left: 152px;
+}
+#resistance7
+{
+    background-size: cover;
+    display: inline-block;
+    visibility: hidden;
+    position: absolute;
+    top: 124px;
+    left: 112px;
+}
+#chooseone
+{
+    position: absolute;
+    width: 200px;
+    height: 185px;
+    top:125px;
+    left: 1100px;
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: #3c8dbc;
+    box-shadow: 2px 4px 6px;
+    padding: 10px;
+}
+
+.radio-input
+{
+    font-weight: bolder;
+    color:#fff;
+    font-size: 22px;
+}
+#showanother
+{
+    visibility: hidden;
+    position: absolute;
+    top:300px;
+    left:600px;
+    width:200px;
+    height:150px;
+    border: 2px solid orange;
+    border-radius:4px ;
+}
+#cross
+{position: absolute;
+margin-left: 165px;
+margin-top: -90px;}
+#sel2
+{
+    position: absolute;
+    margin-top: 10px;
+}
+#CursorLayer
+{
+    position: absolute; 
+    margin-top: 470px;
+    margin-left: 560px;
+    background-color: pink;
+    border-radius: 5px;
+    border:2px solid brown;
+    width: 570px;
+    height:470px;
+}
+#heading
+{
+    position: absolute;
+    margin-top: 85px;
+    width:1330px;
+    height:25px;
+    border-radius: 4px;
+    background-color: #404040;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 20px;
+}
+#display
+{
+    position: absolute;
+    top:192px;
+    left:830px;
+    
+    z-index: 10;
+border-radius: 5px;
+  
+  transition: transform .2s;
+
+
+}
+
+#display:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+
+    
+
+
+    #power1
+{
+    background-size: cover;
+    display: inline-block;
+    visibility: hidden;
+    position: absolute;
+    top: 324px;
+    left: 222px;
+}
+    #power2
+{
+    background-size: cover;
+    display: inline-block;
+    visibility: hidden;
+    position: absolute;
+    top: 324px;
+    left: 392px;
+}
+    #power3
+{
+    background-size: cover;
+    display: inline-block;
+    visibility: hidden;
+    position: absolute;
+    top: 324px;
+    left: 562px;
+}
+    #power4
+{
+    background-size: cover;
+    display: inline-block;
+    visibility: hidden;
+    position: absolute;
+    top: 324px;
+    left: 642px;
+}
+
+#res1
+{
+     transition: transform .2s;
+}
+
+#res1:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.7); 
+}
+#res2
+{
+     transition: transform .2s;
+
+
+}
+
+#res2:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.7); 
+}
+#res3
+{
+     transition: transform .2s;
+
+
+}
+
+#res3:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.7); 
+}
+#res4
+{
+     transition: transform .2s;
+
+
+}
+
+#res4:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.7); 
+}
+#res5
+{
+     transition: transform .2s;
+
+
+}
+
+#res5:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.7); 
+}
+#res6
+{
+     transition: transform .2s;
+
+
+}
+
+#res6:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.7); 
+}
+#res7
+{
+     transition: transform .2s;
+
+
+}
+
+#res7:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.7); 
+}
+
+
+
+#mytable
+{
+  position: absolute;
+  top:720px;
+  left:50px;
+}
+#mytable tr:nth-child(even){background-color: #f2f2f2;}
+
+#mytable1
+{
+  position: absolute;
+  top:720px;
+  left:280px;
+}
+#mytable1 tr:nth-child(even){background-color: #f2f2f2;}
+
+#mytable2
+{
+  position: absolute;
+  top:720px;
+  left:340px;
+}
+#mytable2 tr:nth-child(even){background-color: #f2f2f2;}
+
+#mytable3
+{
+  position: absolute;
+  top:720px;
+  left:340px;
+}
+#mytable3 tr:nth-child(even){background-color: #f2f2f2;}
+#one
+{
+  position:  absolute;
+  top:9px;
+  left: 25px;
+
+}
+#two
+{
+  position:  absolute;
+  top:9px;
+  left:25px;
+}
+#three
+{
+  position:  absolute;
+  top:9px;
+  left:25px;
+}
+#four
+{
+  position:  absolute;
+  top:20px;
+  left:23px;
+  font-size: 24px;
+  font-family: sans-serif;
+}
+.true
+{
+  color:#000;
+  font-weight: bolder;
+  font-size: 14px;
+}
+#heading1
+{
+  position: absolute;
+  top:52px;
+  left: 68px;
+}
+#heading2
+{
+  position: absolute;
+  top: 52px;
+  left: 68px;
+}
+#heading3
+{
+  position: absolute;
+  top: 52px;
+  left: 68px;
+}
+
+#figure1{
+height: 250px;
+width: 400px;
+}

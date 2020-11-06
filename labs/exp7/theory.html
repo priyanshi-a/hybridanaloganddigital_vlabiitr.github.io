@@ -1,0 +1,266 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Virtual Labs </title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <!-- Bootstrap 3.3.6 -->
+        <link rel="stylesheet" href="../../bootstrap/css/bootstrap.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../../dist/css/AdminLTE.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
+        <script>
+            window.onload = function () {
+                document.getElementById("theory").className = "active treeview";
+            }
+        </script>
+    </head>
+
+    <body class="hold-transition skin-blue sidebar-mini">
+        <!--Navigation Bar-->
+<div class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://iitb.ac.in"><span><img src="images/iitb_logo_30dpi.png"></span></a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/">HOME</a>
+        </li>
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/labs/labs.html">LABS</a>
+        </li>
+        <!--<li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/Syllabus_Matrix/syllabus.html">SYLLABUS</a>
+        </li>
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/L1-Form/idea.php">CONTRIBUTE</a>
+        </li>
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/vlab_tool/index.php ">LAB TOOL</a>
+        </li>
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/wiki/doku.php">WIKI</a>
+        </li> -->
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/gitlab/">GITLAB</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+        
+        <div class="wrapper">
+        	<header class="main-header">
+        <!-- Logo -->
+        <a href="../index.html" class="logo">
+        <p align="center" style="font-size:0.8em;"><b>Hybrid A&D Electronics</b></p>
+    </a>
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top">
+          <!-- Sidebar toggle button-->
+          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+          <section class="content-header">
+            <ol class="breadcrumb">
+              <li>
+                <a href="../index.html"><i class="fa fa-dashboard"></i>Hybrid Analog and Digital Electronics</a>
+              </li>
+              <li>
+                <a href="#">Full Subtractor using 4:1 MUX</a>
+              </li>
+              <li class="active">Theory</li>
+            </ol>
+          </section>
+        </nav>
+      </header>
+            
+      <!-- Left side column. contains the logo and sidebar -->
+      <aside class="main-sidebar">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+          <!-- search form -->
+          <form action="#" method="get" class="sidebar-form">
+            <div class="input-group"></div>
+          </form>
+          <!-- /.sear ch form -->
+          <!-- sidebar menu: : style can be found in sidebar.less -->
+            <ul class="sidebar-menu">
+                <li class="treeview" id="aim">
+                    <a href="index.html">
+                        <i class="fa fa-files-o"></i> <span>Aim</span>
+
+                    </a>
+                </li>
+                <li class="treeview" id="theory">
+                    <a href="theory.html" >
+                        <i class="fa fa-files-o"></i>
+                        <span>Theory</span>
+                    </a>
+                </li>
+             <!--   <li class="treeview" id="numerical">
+                    <a href="numerical.php">
+                        <i class="fa fa-laptop"></i>
+                        <span>Numerical</span>
+                        <span class="pull-right-container">
+                        </span>
+                    </a>
+                </li>
+                <li class="treeview" id="program">
+                    <a href="program.php">
+                        <i class="fa fa-laptop"></i>
+                        <span>Program</span>
+                        <span class="pull-right-container">
+                        </span>
+                    </a>
+                </li> -->
+                <li class="treeview" id="pretest">
+                    <a href="pretest.html">
+                        <i class="fa fa-files-o"></i> <span>Pre Test</span>
+
+                    </a>
+                </li>
+                
+                <li class="treeview" id="procedure">
+                    <a href="procedure.html">
+                        <i class="fa fa-files-o"></i> <span>Procedure</span>
+                    </a>
+                </li>
+                <li class="treeview" id="simulation">
+                    <a href="simulation.html">
+                        <i class="fa fa-laptop"></i>
+                        <span>Simulation</span>
+                        <span class="pull-right-container">
+                        </span>
+                    </a>
+                </li>
+
+              
+                
+                <li class="treeview" id="posttest">
+                    <a href=" posttest.html">
+                        <i class=" fa fa-files-o">
+                    </i>
+                    <span>Post Test</span>
+                    <span class="pull-right-container">
+                    </span>
+                    </a>
+                </li>
+                <li class="treeview" id="ref">
+                    <a href="references.html">
+                        <i class="fa fa-files-o"></i>
+                        <span>References</span>
+                        <span class="pull-right-container">
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!-- /.sidebar -->
+      </aside>
+
+   
+            <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+                <section class="content-header">
+                <h1 align="center">
+                    Full Subtractor using 4:1 MUX<!-- Write experiment name here --> 
+                </h1>
+                </section>
+                    <!-- Main content -->
+                    <section class="content">
+                    <h3 style="margin-top:5%"> Theory </h3>
+					<h3> Full Subtractor </h3>
+                    <p style="font-size:130%; margin-top:2%">
+Different variants of an adder and a subtractor form an integral part of modern ICs and are found in Arithmetic Logic Units (ALUs) and the digital Signal Processing (DSP) units. A half subtractor is a combinational circuit that performs subtraction of two binary bits. It has two inputs (minuend and subtrahend) and two outputs Difference (<b>D</b>) and Borrow (<b>B<sub>out</sub></b>). Half-subtractor is used to subtract the LSB of the subtrahend to the LSB of the minuend when one binary number is subtracted from another. Subtraction is done according to the rules of binary subtraction. A disadvantage of the Half Subtractor circuit is that there is no provision for a ‘Borrow-in’ from the previous circuit when subtracting multiple data bits from each other. A full subtractor circuit takes into account this borrow-in input from the previous circuit. In Full Subtractor circuit there are three inputs, A which is Minuend, B which is Subtrahend and Borrow in (<b>B<sub>in</sub></b>) of the previous stage and two outputs Difference (<b>D</b>) and Borrow out (<b>B<sub>out</sub></b>). The Boolean expressions for Difference and Borrow are<br>
+<center><p style="font-size:130%;"> Difference - A⊕B⊕Bin<br>
+Borrow - A'.B<sub>in</sub> + B.B<sub>in</sub> + B.A'</p></center> 
+<p style="font-size:130%;">The operations can be summarized in a truth table as,<br>
+
+<center><img src="images/table 1.png" style="width:700px;height:400px"></center>
+<p style="font-size:130%;">Full subtractor can be implemented using a 4:1multiplexer.</p>
+<h3>Multiplexer</h3>
+
+<p style="font-size:130%; margin-top:2%">A multiplexer is a combinational circuit which selects binary information present on any one of the input lines, depending upon the logic status of the selection inputs, and routes it to the output line. If there are m selection lines, then the number n of maximum possible input lines is 2<sup>m</sup> and the multiplexer is referred to as a n-to-1 multiplexer. A 4:1 multiplexer (Fig. 1) has 4 input lines and 2 selection lines. Table 2 shows the output of a 4:1 multiplexer.</p>
+
+<center><img src="images/image 1.png" style="width:500px;height:400px">
+<img src="images/table 2.png" style="width:500px;height:400px"></center>
+
+<h3>Implementation of a Full Subtractor using 4:1Multiplexer</h3>
+<p style="font-size:130%; margin-top:2%">In a full subtractor there are three inputs and A, B and Bin and two outputs D and Bout. The Booleanfunctions for Difference and Borrow in SOP form are as follows:</p>
+<center><p style="font-size:130%;"> D(A,B,B<sub>in</sub>)= Σ(1,2,4,7)<br>
+B<sub>out</sub>(A,B,B<sub>in</sub>)= Σ(1,2,3,7)</center></p>
+<p style="font-size:130%;">In view of these the output table of full subtractor can be rewritten as</p>
+<center><img src="images/table 3.png " style="width:700px;height:400px;"></center>
+
+<p style="font-size:130%;">On comparing tables 2 and 3 we find that the difference and borrow bits of full subtractor can be implemented using 4:1 multiplexer as follows:<br>
+The selection lines of the multiplexer be given values as per the two inputs A and B of the full subtractor.</p>
+<h3>For Difference Output</h3>
+<p style="font-size:130%;">Two input lines of the multiplexer be given values corresponding to third input B<sub>in</sub> of the subtractor and other two lines be given its complemented values B<sub>in</sub>'. </p>
+<h3> For Borrow Output</h3>
+ <p style="font-size:130%;"> Two input lines be given input values corresponding to third input Bin of the subtractor and out of rest two one is always high and the other is always low.<br>
+ The diagrammatic representation is given in Figures 2(a) and 2(b):</p>
+ <center><img src="images/image 2.png " style="width:1000px;height:500px;"></center>
+ <p style= "font-size:130%;"> In the experiment the Full subtractor circuit is designed using a dual multiplexer IC 74153 and a NOT gate IC7404.</p>
+ 
+ <h3>74153 Multiplexer IC </h3>
+ <p style="font-size:130%; margin-top:2%"> The 74153 IC is a dual 4 input multiplexer with common selection lines S<sub>0</sub> and S<sub>1</sub>and individual active LOW enable inputs E<sub>a</sub> and E<sub>b</sub>for each section.It can select two bits of data I<sub>a</sub> and I<sub>b</sub> from up to four sources.The selection lines control the particular input to be multiplexed and sent to the output Z<sub>i</sub> (i = a, b). The two buffered outputs present data in the true (non-inverted) form. When the Enables (E<sub>a</sub>, E<sub>b</sub>) are HIGH, the corresponding outputs (Z<sub>a</sub>, Z<sub>b</sub>) are forced LOW. The pin diagram is shown in fig 3. More details can be found on<a href="74LS153.pdf" target="_blank"><u> Datasheet</u></a>.</p>
+
+<img src="images/image 3.png" style="float:right; width:850px;height:500px;"><br><br><br><br><br>
+<h3>Pin Name</h3>
+<p style="font-size:130%;"><b>S<sub>0</sub>,S<sub>1</sub> -</b> Common Select Input <br>
+<b>E -</b> Enable (Active LOW) Input <br>
+<b>I<sub>0</sub>, I<sub>1</sub>, I<sub>2</sub>, I<sub>3</sub> -</b> Multiplexer Inputs <br>
+<b>Z-</b> Multiplexer Output
+</p><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<p style="font-size:130%;"> The circuit diagram of Full Subtractor using dual multiplexer IC 74153 is shown in Fig.4 and the function table of 74153 MUX IC for full multiplexer is shown in table 4.</p>
+ <center><img src="images/image 4.png " style="width:700px;height:500px;">
+ <img src="images/table 4.png " style="width:800px;height:500px;"></center>
+ 
+<p style="font-size:130%;"> The pin diagram of 7404 NOT gate IC is shown in fig 5.</p>
+ <center><img src="images/image 5.png " style="width:500px;height:450px;"></center>
+ 
+ <h3>Application Of Full Subtractor</h3>
+ <p style="font-size:130%; margin-top:2%">1) These are generally employed in ALU (Arithmetic logic unit) in computers to subtract and in CPU and GPU for the applications of graphics to decrease the circuit difficulty.  <br>
+2) Subtractors are mostly used for performing arithmetical functions likesubtraction, in electronic calculators as well as digital devices. <br>
+3) These are also applicable in different microcontrollers forarithmetic subtraction, timers, and program counter (PC). <br>
+4) They are also useful for DSP and networking-based systems. <br>
+                  <!--Theory of experiment -->
+                    </p>
+                </section>
+            <!-- /.content -->
+            </div>
+            <footer class="main-footer">
+                <h4 align="center">Lab contributed by M.J.P. Rohilkhand University, Bareilly <!-- Institute Name --> </h4>
+            </footer>
+        </div>
+        
+    </body>
+</html>
+
+<!-- ./wrapper -->
+<!-- jQuery 2.2.3 -->
+<script src="../../plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+<!-- Slimscroll -->
+<script src="../../plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="../../plugins/fastclick/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/app.min.js"></script>

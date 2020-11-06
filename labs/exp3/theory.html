@@ -1,0 +1,282 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Virtual Labs </title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <!-- Bootstrap 3.3.6 -->
+        <link rel="stylesheet" href="../../bootstrap/css/bootstrap.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../../dist/css/AdminLTE.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
+        <script>
+            window.onload = function () {
+                document.getElementById("theory").className = "active treeview";
+            }
+        </script>
+    </head>
+
+    <body class="hold-transition skin-blue sidebar-mini">
+        <!--Navigation Bar-->
+<div class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://iitb.ac.in"><span><img src="images/iitb_logo_30dpi.png"></span></a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/">HOME</a>
+        </li>
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/labs/labs.html">LABS</a>
+        </li>
+        <!--<li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/Syllabus_Matrix/syllabus.html">SYLLABUS</a>
+        </li>
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/L1-Form/idea.php">CONTRIBUTE</a>
+        </li>
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/vlab_tool/index.php ">LAB TOOL</a>
+        </li>
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/wiki/doku.php">WIKI</a>
+        </li> -->
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/gitlab/">GITLAB</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+        
+        <div class="wrapper">
+        	<header class="main-header">
+        <!-- Logo -->
+        <a href="../index.html" class="logo">
+        <p align="center" style="font-size:0.8em;"><b>Hybrid A&D Electronics</b></p>
+    </a>
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top">
+          <!-- Sidebar toggle button-->
+          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+          <section class="content-header">
+            <ol class="breadcrumb">
+              <li>
+                <a href="../index.html"><i class="fa fa-dashboard"></i>Hybrid Analog and Digital Electronics </a>
+              </li>
+              <li>
+                <a href="#">Generation of Sawtooth wave using Op-Amp </a>
+              </li>
+              <li class="active">Theory</li>
+            </ol>
+          </section>
+        </nav>
+      </header>
+            
+      <!-- Left side column. contains the logo and sidebar -->
+      <aside class="main-sidebar">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+          <!-- search form -->
+          <form action="#" method="get" class="sidebar-form">
+            <div class="input-group"></div>
+          </form>
+          <!-- /.sear ch form -->
+          <!-- sidebar menu: : style can be found in sidebar.less -->
+            <ul class="sidebar-menu">
+                <li class="treeview" id="aim">
+                    <a href="index.html">
+                        <i class="fa fa-files-o"></i> <span>Aim</span>
+
+                    </a>
+                </li>
+                <li class="treeview" id="theory">
+                    <a href="theory.html" >
+                        <i class="fa fa-files-o"></i>
+                        <span>Theory</span>
+                    </a>
+                </li>
+             <!--   <li class="treeview" id="numerical">
+                    <a href="numerical.php">
+                        <i class="fa fa-laptop"></i>
+                        <span>Numerical</span>
+                        <span class="pull-right-container">
+                        </span>
+                    </a>
+                </li>
+                <li class="treeview" id="program">
+                    <a href="program.php">
+                        <i class="fa fa-laptop"></i>
+                        <span>Program</span>
+                        <span class="pull-right-container">
+                        </span>
+                    </a>
+                </li> -->
+                <li class="treeview" id="pretest">
+                    <a href="pretest.html">
+                        <i class="fa fa-files-o"></i> <span>Pre Test</span>
+
+                    </a>
+                </li>
+                
+                <li class="treeview" id="procedure">
+                    <a href="procedure.html">
+                        <i class="fa fa-files-o"></i> <span>Procedure</span>
+                    </a>
+                </li>
+                <li class="treeview" id="simulation">
+                    <a href="simulation.html">
+                        <i class="fa fa-laptop"></i>
+                        <span>Simulation</span>
+                        <span class="pull-right-container">
+                        </span>
+                    </a>
+                </li>
+
+              
+                
+                <li class="treeview" id="posttest">
+                    <a href=" posttest.html">
+                        <i class=" fa fa-files-o">
+                    </i>
+                    <span>Post Test</span>
+                    <span class="pull-right-container">
+                    </span>
+                    </a>
+                </li>
+                <li class="treeview" id="ref">
+                    <a href="references.html">
+                        <i class="fa fa-files-o"></i>
+                        <span>References</span>
+                        <span class="pull-right-container">
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!-- /.sidebar -->
+      </aside>
+
+   
+            <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+                <section class="content-header">
+                <h1 align="center">
+                    Generation of Sawtooth wave using Op-Amp <!-- Write experiment name here --> 
+                </h1>
+                </section>
+                    <!-- Main content -->
+                    <section class="content">
+                    <h3 style="margin-top:5%"> Theory </h3>
+					
+					<h3>Sawtooth waveform</h3>
+					
+                    <p style="font-size:130%; margin-top:2%">
+The sawtooth wave as shown in Fig. 1 is a kind of non-sinusoidal waveform. It is named, based on its resemblance to the 'teeth of a saw'. The convention is that a sawtooth wave ramps upward and then sharply drops. However, in a "reverse (or inverse) sawtooth wave", the wave ramps downward and then sharply rise. It can also be considered the extreme case of an asymmetric triangle wave. </p>
+
+<center><img src="images/image 1.png" style="width:600px;height:300px">
+<figcaption style="font-size:130%; margin-left:5%"><b> Fig.1- Sawtooth waveform </b></figcaption></center>
+<br>
+
+<p style="font-size:130%;"> The difference between the triangular and sawtooth waveforms is that the rise time of the triangular wave is always equal to its fall time. That is, the same amount of the time is required for the triangular wave to swim from -V<sub>ramp</sub> to +V<sub>ramp</sub> as from +V<sub>ramp</sub> to -V<sub>ramp</sub> . On the other hand, the sawtooth waveform has unequal rise and fall times. That is, it may rise positively many times faster than it falls negatively, or vice versa. The triangular wave generator can be converted into sawtooth wave generator by connecting the noninverting terminal of the integrator to ground. This can be accomplished by using the resistance and connecting it to +V<sub>CC</sub> and -V<sub>EE</sub> as shown in Fig 2.</p>
+
+<center><img src="images/image 2.png" style="width:700px;height:300px"><br>
+<figcaption style="font-size:130%; margin-left:5%"><b> Fig.2- Circuit diagram of sawtooth wave generator </b></figcaption></center>
+<br>
+
+<p style="font-size:130%;">A square wave is constructed from only odd harmonics, a sawtooth wave's sound is harsh and clear and its spectrum contains both even and odd harmonics of the fundamental frequency. Because it contains all the integer harmonics, it is one of the best waveforms to use for subtractive synthesis of musical sounds, particularly bowed string instruments like violins and cellos, since the slip-stick behavior of the bow drives the strings with a sawtooth-like motion.<br>
+The oscillation frequency can be calculated by the following formula.
+ </p>
+ 
+ <center>
+ <table style="width:10%;font-size:130%";>
+ <tr>
+ <td rowspan="2">f=</td>
+ <td style="border-bottom:1px solid black; text-align:center">1</td>
+ <td rowspan="2">(</td>
+ <td style="border-bottom:1px solid black;">R3</td>
+ <td rowspan="2">)</td>
+ </tr>
+ <tr>
+ <td>2C(R1+R2)</td>
+  <td>R4</td>
+ </tr>
+ </table>
+ </center>
+ 
+
+<h3>Applications</h3>
+
+<p style="font-size:130%;">1.	Sawtooth waves are known for their use in music. The sawtooth and square waves are among the most common waveforms used to create sounds with subtractive analog and virtual analog music synthesizers.</p>
+<p style="font-size:130%;">2.	The sawtooth wave is the form of the vertical and horizontal deflection signals used to generate a raster on CRT-based television or monitor screens.</p>
+<p style="font-size:130%;">3.	Oscilloscopes also use a sawtooth wave for their horizontal deflection, though they typically use electrostatic deflection.</p> 
+
+<h3>Methods to generate the sawtooth wave</h3>
+
+<p style="font-size:130%;">There are many ways to generate sawtooth wave as: By Using transistor, ICs as 741, TL082, TL084, combination of IC 555 and 741, integrating square wave with a feedback capacitance, Unijunction Transistor (UJT) but we are using OP-Amp IC TL084 to generate sawtooth waveform. The circuit diagram of Sawtooth wave generator using OP-Amp IC 741 is shown in Fig. 2.</p>
+
+
+
+
+
+<h3>IC Configuration</h3>
+
+<p style="font-size:130%;"> IC 741, usually called op-amp 741 is an 8 pin dual in line package (DIP) integrated circuit consisting of 8 pins. The pin configuration of Op –amp IC is shown in fig. 2. Terminals 2 and 3 are called input terminals. Signal applied to terminal 2 arrives at the output terminal with 180 degree phase shift hence it is called inverting terminal while the signal applied to the terminal 3 arrives with same phase at the output hence it is called non-inverting terminal. Power supply of +5V and -5V are applied at terminals 7 and 4 respectively. The output is obtained at the terminal 6. Terminal 1 is offset null because it has no use in general operations. The name op-amp 741 is given to this integrated circuit as it is clear from its pin configuration that there are 7 active pins having 4 input terminals (2, 3, 4 and 7) and one output terminal (6th terminal).</p>
+
+<center><img src="images/image 3(2).png" style="width:600px;height:300px">
+<figcaption style="font-size:130%; margin-left:-3%"><b> Fig.3- Pin diagram of an op amp IC 741 </b></figcaption></center>
+
+
+
+
+<h3>Working </h3>
+
+<p style="font-size:130%;">In the circuit diagram of Fig. 2, IC '1' is the Schmitt circuit and IC '2' is the integration circuit. The difference with the triangular wave oscillator is due the change in the time of the charging and the discharging of the capacitor. When the output of IC 1 is positive, it charges rapidly by the small resistance(R1). When the output of IC 1 is negative, it is made to charge gradually through larger resistance(R2). The output waveform of the integration circuit becomes a waveform like the 'tooth of the saw'.</p>
+<p style="font-size:130%;">Like the triangular wave oscillator, the line voltage needs both of the positive power supply and the negative power supply. Also, to work in the oscillation, the condition R3 > R4 is necessary. However, when the value of R4 < R3, the output voltage becomes small. Near values are good for R3 and R4.</p>
+<p style="font-size:130%;">Now, Suppose that the point A is at positive voltage as shown in fig 4(a), the electric current flows to the capacitor(C) through D1 and R1. When the value of R2 is small compared to R1, the point B falls to the negative voltage at a shorter time. The point A changes into the negative voltage rapidly when the point B falls to the negative voltage and the positive input terminal of IC 1 falls to a few below 0V. For the positive input terminal of IC 1 to fall below 0 V, the condition of R3 > R4 is necessary. When the point A is negative, the electric current flows from the capacitor(C) through D2 and R2. When R2 is large compared to R1, the point B becomes the positive voltage, making the rise slower. The point A changes into the positive voltage rapidly when the point B rises to the positive voltage and the positive input terminal of IC1 exceeds a few 0 V. For the positive input terminal of IC 1 to exceed 0 V, </p>
+
+<center><img src="images/image 4.png" style="width:800px;height:600px">
+<figcaption style="font-size:130%; margin-left:5%"><b> Fig.4- Working of sawtooth wave generator </b></figcaption></center>
+
+
+</p>
+
+                    </p>
+                </section>
+            <!-- /.content -->
+            </div>
+            <footer class="main-footer">
+                <h4 align="center">Lab contributed by M.J.P. Rohilkhand University, Bareilly <!-- Institute Name --> </h4>
+            </footer>
+        </div>
+        
+    </body>
+</html>
+
+<!-- ./wrapper -->
+<!-- jQuery 2.2.3 -->
+<script src="../../plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+<!-- Slimscroll -->
+<script src="../../plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="../../plugins/fastclick/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/app.min.js"></script>

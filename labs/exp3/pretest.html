@@ -1,0 +1,469 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Virtual Labs </title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <!-- Bootstrap 3.3.6 -->
+        <link rel="stylesheet" href="../../bootstrap/css/bootstrap.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../../dist/css/AdminLTE.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
+        <script>
+            window.onload = function () {
+                document.getElementById("pretest").className = "active treeview";
+            }
+        </script>
+    </head>
+
+    <body class="hold-transition skin-blue sidebar-mini">
+        <!--Navigation Bar-->
+<div class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://iitb.ac.in"><span><img src="images/iitb_logo_30dpi.png"></span></a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/">HOME</a>
+        </li>
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/labs/labs.html">LABS</a>
+        </li>
+        <!--<li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/Syllabus_Matrix/syllabus.html">SYLLABUS</a>
+        </li>
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/L1-Form/idea.php">CONTRIBUTE</a>
+        </li>
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/vlab_tool/index.php ">LAB TOOL</a>
+        </li>
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/wiki/doku.php">WIKI</a>
+        </li> -->
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/gitlab/">GITLAB</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+        
+        <div class="wrapper">
+        	<header class="main-header">
+        <!-- Logo -->
+        <a href="../index.html" class="logo">
+        <p align="center" style="font-size:0.8em;"><b>Hybrid A&D Electronics</b></p> <!-- Write your lab name -->
+    </a>
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top">
+          <!-- Sidebar toggle button-->
+          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+          <section class="content-header">
+            <ol class="breadcrumb">
+              <li>
+                <a href="../index.html"><i class="fa fa-dashboard"></i>Hybrid Analog And Digital Electronics</a>
+              </li>
+              <li>
+                <a href="#">Generation of Sawtooth wave using Op-Amp<!-- Write your experiment name --> </a>
+              </li>
+              <li class="active">Pre Test</li>
+            </ol>
+          </section>
+        </nav>
+      </header>
+            
+      <!-- Left side column. contains the logo and sidebar -->
+      <aside class="main-sidebar">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+          <!-- search form -->
+          <form action="#" method="get" class="sidebar-form">
+            <div class="input-group"></div>
+          </form>
+          <!-- /.sear ch form -->
+          <!-- sidebar menu: : style can be found in sidebar.less -->
+            <ul class="sidebar-menu">
+                <li class="treeview" id="aim">
+                    <a href="index.html">
+                        <i class="fa fa-files-o"></i> <span>Aim</span>
+
+                    </a>
+                </li>
+                <li class="treeview" id="theory">
+                    <a href="theory.html" >
+                        <i class="fa fa-files-o"></i>
+                        <span>Theory</span>
+                    </a>
+                </li>
+             <!--   <li class="treeview" id="numerical">
+                    <a href="numerical.php">
+                        <i class="fa fa-laptop"></i>
+                        <span>Numerical</span>
+                        <span class="pull-right-container">
+                        </span>
+                    </a>
+                </li>
+                <li class="treeview" id="program">
+                    <a href="program.php">
+                        <i class="fa fa-laptop"></i>
+                        <span>Program</span>
+                        <span class="pull-right-container">
+                        </span>
+                    </a>
+                </li> -->
+                <li class="treeview" id="pretest">
+                    <a href="pretest.html">
+                        <i class="fa fa-files-o"></i> <span>Pre Test</span>
+
+                    </a>
+                </li>
+                
+                <li class="treeview" id="procedure">
+                    <a href="procedure.html">
+                        <i class="fa fa-files-o"></i> <span>Procedure</span>
+                    </a>
+                </li>
+                <li class="treeview" id="simulation">
+                    <a href="simulation.html">
+                        <i class="fa fa-laptop"></i>
+                        <span>Simulation</span>
+                        <span class="pull-right-container">
+                        </span>
+                    </a>
+                </li>
+
+               
+                
+                <li class="treeview" id="posttest">
+                    <a href=" posttest.html">
+                        <i class=" fa fa-files-o">
+                    </i>
+                    <span>Post Test</span>
+                    <span class="pull-right-container">
+                    </span>
+                    </a>
+                </li>
+                <li class="treeview" id="ref">
+                    <a href="references.html">
+                        <i class="fa fa-files-o"></i>
+                        <span>References</span>
+                        <span class="pull-right-container">
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!-- /.sidebar -->
+      </aside>
+
+   
+            <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+                <section class="content-header">
+                <h1 align="center">
+                    Generation of Sawtooth wave using Op-Amp<!-- Write experiment name here --> 
+                </h1>
+                </section>
+                    <!-- Main content -->
+                    <section class="content">
+                    <h3 style="margin-top:5%"> Pre Test </h3>
+                    <p style="font-size:130%; margin-top:2%">
+                    	<form name="quiz" style="font-size: 120%">
+                        Q1. Sawtooth waveform is basically a
+                
+                        <br>
+                        <blockquote>
+                        A. &nbsp;<input type="radio" name="q1" value="a" onclick="ans1();">&nbsp;&nbsp; Sinusoidal waveform<br>
+                        B. &nbsp;<input type="radio" name="q1" value="b" onclick="ans1();">&nbsp;&nbsp; Triangular waveform<br>
+                        C. &nbsp;<input type="radio" name="q1" value="c" onclick="ans1();">&nbsp;&nbsp; Non sinusoidal waveform<br>
+                        D. &nbsp;<input type="radio" name="q1" value="d" onclick="ans1();">&nbsp;&nbsp; Square waveform<br>
+                		</blockquote>
+
+                    <div id="ans1" style="display:none;color:blue;font-size:20px;">Ans is C</div>
+                    <br>
+                        Q2.  How a triangular wave generator is derived from square wave generator?                
+                        <br>
+                        <blockquote>
+                        A. &nbsp;<input type="radio" name="q2" value="a" onclick="ans2();">&nbsp;&nbsp; Connect oscillator at the output.<br>
+                        B. &nbsp;<input type="radio" name="q2" value="b" onclick="ans2();">&nbsp;&nbsp; Connect voltage follower at output.<br>
+                        C. &nbsp;<input type="radio" name="q2" value="c" onclick="ans2();">&nbsp;&nbsp; Connect differentiator at the output.<br>
+					    D. &nbsp;<input type="radio" name="q2" value="d" onclick="ans2();">&nbsp;&nbsp; Connect integrator at the output.<br>
+                        </blockquote>
+
+                    <div id="ans2" style="display:none;color:blue;font-size:20px">Ans is D</div>
+                    <br>
+   
+                        Q3. What must be the duty cycle of square wave which causes the output of integrator to be Sawtooth?
+                        
+                        <br>
+                        <blockquote>
+						A. &nbsp;<input type="radio" value="a" name="q3" value="a" onclick="ans3();">&nbsp;&nbsp; Less than 50%<br>
+						B. &nbsp;<input type="radio" value="b" name="q3" value="b" onclick="ans3();">&nbsp;&nbsp; Equal to 50%<br>
+   						C. &nbsp;<input type="radio" value="c" name="q3" value="c" onclick="ans3();">&nbsp;&nbsp; More than 75%<br>
+						D. &nbsp;<input type="radio" value="d" name="q3" value="d" onclick="ans3();">&nbsp;&nbsp; Less than 25%<br>
+                
+                    	</blockquote>
+                   
+                        <div id="ans3" style="display:none;color:blue;font-size:20px">Ans is A</div>
+                        <br>                 
+
+                        Q4. Which of the following waveforms is referred as ‘sweep’?
+                        <br>
+                        <blockquote>
+						A. &nbsp;<input type="radio" name="q4" value="a" onclick="ans4();">&nbsp;&nbsp; Square waveform<br>
+						B. &nbsp;<input type="radio" name="q4" value="b" onclick="ans4();">&nbsp;&nbsp; Spike waveform<br>
+						C. &nbsp;<input type="radio" name="q4" value="c" onclick="ans4();">&nbsp;&nbsp; Triangular waveform<br>
+						D. &nbsp;<input type="radio" name="q4" value="d" onclick="ans4();">&nbsp;&nbsp; Sawtooth waveform<br>
+                        </blockquote>
+                    <div id="ans4" style="display:none;color:blue;font-size:20px">Ans is D</div>
+                    <br>
+                    
+                        Q5. The sawtooth wave can be generated using ….
+                        <br>
+                        <blockquote>
+						A. &nbsp;<input type="radio" value="a" name="q5" onclick="ans5();">&nbsp;&nbsp; Two 741 op-amp ICs<br>
+						B. &nbsp;<input type="radio" value="b" name="q5" onclick="ans5();">&nbsp;&nbsp; Combination of 555 timer IC and 741 op-amp IC<br>
+						C. &nbsp;<input type="radio" value="c" name="q5" onclick="ans5();">&nbsp;&nbsp; TL084 IC<br>
+						D. &nbsp;<input type="radio" value="d" name="q5" onclick="ans5();">&nbsp;&nbsp; All of these<br>                        
+						</blockquote>
+                    <div id="ans5" style="display:none;color:blue;font-size:20px">Ans is D</div>
+                    <br>
+                    
+
+                        Q6. Find out the sawtooth wave generator from the following circuits.
+                        <br>
+                        <blockquote>
+						A. &nbsp;<input type="radio" name="q6" value="a" onclick="ans6();">&nbsp;&nbsp; <img src="images/que 6(a).png" style="width:300px;height:200px"><br>
+						B. &nbsp;<input type="radio" name="q6" value="b" onclick="ans6();">&nbsp;&nbsp; <img src="images/que 6(b).png" style="width:300px;height:200px"><br>
+						C. &nbsp;<input type="radio" name="q6" value="c" onclick="ans6();">&nbsp;&nbsp; <img src="images/que 6(c).png" style="width:300px;height:200px"><br>
+						D. &nbsp;<input type="radio" name="q6" value="d" onclick="ans6();">&nbsp;&nbsp; None of the mentioned<br>                        </blockquote>
+                    <div id="ans6" style="display:none;color:blue;font-size:20px">Ans is C</div>
+                    <br>
+                              
+          				Q7. In the sawtooth wave generation by two 741 op-amp ICs, the first op- amp IC acts as
+                        <br>
+                        <blockquote>
+						A. &nbsp;<input type="radio" name="q7" value="a" onclick="ans7();">&nbsp;&nbsp; Sine wave generator<br>
+						B. &nbsp;<input type="radio" name="q7" value="b" onclick="ans7();">&nbsp;&nbsp; Triangular wave generator<br>
+						C. &nbsp;<input type="radio" name="q7" value="c" onclick="ans7();">&nbsp;&nbsp; Pulse generator<br>
+						D. &nbsp;<input type="radio" name="q7" value="d" onclick="ans7();">&nbsp;&nbsp; Spike wave generator<br>                      	</blockquote>
+                
+                    
+                    <div id="ans7" style="display:none;color:blue;font-size:20px">Ans is C</div>
+                    <br>
+                    
+          				Q8. Sawtooth wave is also known as 
+                        <br>
+                        <blockquote>
+						A. &nbsp;<input type="radio" name="q8" value="a" onclick="ans8();">&nbsp;&nbsp; Symmetric triangular wave<br>
+						B. &nbsp;<input type="radio" name="q8" value="b" onclick="ans8();">&nbsp;&nbsp; Asymmetric triangular wave<br>
+						C. &nbsp;<input type="radio" name="q8" value="c" onclick="ans8();">&nbsp;&nbsp; Triangular wave<br>
+						D. &nbsp;<input type="radio" name="q8" value="d" onclick="ans8();">&nbsp;&nbsp; None of the above<br>                        </blockquote>
+                
+                    
+                    <div id="ans8" style="display:none;color:blue;font-size:20px">Ans is B</div>
+                    <br>
+                    
+          				Q9. What is the peak to peak (PP) output amplitude of the triangular wave?
+                        <br>
+                        <blockquote>
+                        A. &nbsp;<input type="radio" name="q9" value="a" onclick="ans9();">&nbsp;&nbsp; V<sub>O</sub>(pp) = + V<sub>Ramp</sub> + (- V<sub>Ramp</sub>)<br>
+                        B. &nbsp;<input type="radio" name="q9" value="b" onclick="ans9();">&nbsp;&nbsp; V<sub>O</sub>(pp) = – V<sub>Ramp</sub> + (+ V<sub>Ramp</sub>)<br>
+                        C. &nbsp;<input type="radio" name="q9" value="c" onclick="ans9();">&nbsp;&nbsp; V<sub>O</sub>(pp) = + V<sub>Ramp</sub> – (- V<sub>Ramp</sub>)<br>
+                        D. &nbsp;<input type="radio" name="q9" value="d" onclick="ans9();">&nbsp;&nbsp; V<sub>O</sub>(pp) = – V<sub>Ramp</sub> – (+ V<sub>Ramp</sub>)<br>
+                        </blockquote>
+                
+                  
+                    <div id="ans9" style="display:none;color:blue;font-size:20px">Ans is C</div>
+                    <br>
+                  
+          				Q10. Consider the differentiator for which the input and output signals are given in list 1 and list 2 respectively. Match the input wave to the corresponding output wave..
+                        <br>
+						<img src="images/que 10.png" style="width:400px;height:200px"><br>
+                        <blockquote>
+                        A. &nbsp;<input type="radio" name="q10" value="a" onclick="ans10();">&nbsp;&nbsp; 1-iii, 2-i, 3-ii<br>
+                        B. &nbsp;<input type="radio" name="q10" value="b" onclick="ans10();">&nbsp;&nbsp; 1-i, 2-ii, 3-iii<br>
+                        C. &nbsp;<input type="radio" name="q10" value="c" onclick="ans10();">&nbsp;&nbsp; 1-i, 2-iii, 3-ii<br>
+                        D. &nbsp;<input type="radio" name="q10" value="d" onclick="ans10();">&nbsp;&nbsp; 1-ii, 2-iii, 3-i<br>
+                        </blockquote>
+
+                
+                  
+                    <div id="ans10" style="display:none;color:blue;font-size:20px">Ans is D</div><br>
+    
+
+<input type="button" value="Check your score" onClick="getScore(this.form);" style="background-color: #3c8dbc; color: #fff;">&nbsp;&nbsp; : &nbsp;&nbsp;
+		
+<input value="Score out of 10" style="color: #888" type= text id="marks" size=20 name= "mark">&nbsp;&nbsp;
+<input value="Percentage Score" style="color: #888" type=text id="percent" size=20 name="percentage"><hr>
+<input type="reset" value="Want to try Again?" style="background-color: #3c8dbc; color: #fff;" onClick="reset1()"><br>	
+
+					</form>
+					
+					<script>
+	    //hide answers on reset
+		function reset1()
+		{
+			var x1=document.getElementById("ans1");
+			x1.style.display="none";
+			var x2=document.getElementById("ans2");
+			x2.style.display="none";
+			var x3=document.getElementById("ans3");
+			x3.style.display="none";
+			var x4=document.getElementById("ans4");
+			x4.style.display="none";
+			var x5=document.getElementById("ans5");
+			x5.style.display="none";
+			var x6=document.getElementById("ans6");
+			x6.style.display="none";
+			var x7=document.getElementById("ans7");
+			x7.style.display="none";
+			var x8=document.getElementById("ans8");
+			x8.style.display="none";
+			var x9=document.getElementById("ans9");
+			x9.style.display="none";
+			var x10=document.getElementById("ans10");
+			x10.style.display="none";
+		document.getElementById("marks").style.color="#888";
+		    document.getElementById("percent").style.color="#888";
+            }
+		
+       //display answer
+        function ans1()
+        {
+            var div1 = document.getElementById("ans1");
+            div1.style.display = "inline";
+        }
+        function ans2() {
+            var div1 = document.getElementById("ans2");
+            div1.style.display = "inline";
+        }
+        function ans3() {
+            var div1 = document.getElementById("ans3");
+            div1.style.display = "inline";
+        }
+        function ans4() {
+            var div1 = document.getElementById("ans4");
+            div1.style.display = "inline";
+        }
+        function ans5() {
+            var div1 = document.getElementById("ans5");
+            div1.style.display = "inline";
+        }
+        function ans6() {
+            var div1 = document.getElementById("ans6");
+            div1.style.display = "inline";
+    }
+    function ans7() {
+            var div1 = document.getElementById("ans7");
+            div1.style.display = "inline";
+        }
+         function ans8() {
+            var div1 = document.getElementById("ans8");
+            div1.style.display = "inline";
+        }
+    function ans9() {
+            var div1 = document.getElementById("ans9");
+            div1.style.display = "inline";
+        }
+    function ans10() {
+            var div1 = document.getElementById("ans10");
+            div1.style.display = "inline";
+        }
+    
+    </script>
+<p>
+
+    <form method="pre" name="Form" onsubmit="" action="">
+</form>
+
+                    </p>
+                    <script>
+    var numQues = 10;
+var numChoi = 4;
+var answers = new Array(15);
+    answers[0] = "c";
+    answers[1] = "d";
+    answers[2] = "a";
+    answers[3] = "d";
+    answers[4] = "d";
+    answers[5] = "c";
+    answers[6] = "c";
+    answers[7] = "b";
+    answers[8] = "c";
+    answers[9] = "d";
+
+      function getScore(form) {
+
+   var score = 0;
+  var currElt;
+  var currSelection;
+  for (i=0; i<numQues; i++) {
+    currElt = i*numChoi;
+    answered=false; 
+    for (j=0; j<numChoi; j++) {
+      currSelection = form.elements[currElt + j];
+      if (currSelection.checked) {
+        answered=true;
+        if (currSelection.value == answers[i]) {
+          score++;
+          break;
+        }
+      }
+    }
+    if (answered ===false){alert("Do answer all the questions, Please") ;return false;}
+  }
+
+  var scoreper = Math.round(score/numQues*100);
+  form.percentage.value = scoreper + "%";
+  form.mark.value=score;
+document.getElementById("marks").style.color="#888";
+		    document.getElementById("percent").style.color="#888";
+
+
+}
+    </script>
+
+
+                </section>
+            <!-- /.content -->
+            </div>
+            <footer class="main-footer">
+                <h4 align="center">Lab contributed by M.J.P. Rohilkhand University,Bareilly <!-- Institute Name --> </h4>
+            </footer>
+        </div>
+        
+    </body>
+
+     
+    </body>
+</html>
+
+<!-- ./wrapper -->
+<!-- jQuery 2.2.3 -->
+<script src="../../plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+<!-- Slimscroll -->
+<script src="../../plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="../../plugins/fastclick/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/app.min.js"></script>

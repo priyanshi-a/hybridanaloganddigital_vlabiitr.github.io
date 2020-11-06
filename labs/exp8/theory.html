@@ -1,0 +1,248 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Virtual Labs </title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <!-- Bootstrap 3.3.6 -->
+        <link rel="stylesheet" href="../../bootstrap/css/bootstrap.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../../dist/css/AdminLTE.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
+        <script>
+            window.onload = function () {
+                document.getElementById("theory").className = "active treeview";
+            }
+        </script>
+    </head>
+
+    <body class="hold-transition skin-blue sidebar-mini">
+        <!--Navigation Bar-->
+<div class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://iitb.ac.in"><span><img src="images/iitb_logo_30dpi.png"></span></a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/">HOME</a>
+        </li>
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/labs/labs.html">LABS</a>
+        </li>
+        <!--<li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/Syllabus_Matrix/syllabus.html">SYLLABUS</a>
+        </li>
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/L1-Form/idea.php">CONTRIBUTE</a>
+        </li>
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/vlab_tool/index.php ">LAB TOOL</a>
+        </li>
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/wiki/doku.php">WIKI</a>
+        </li> -->
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/gitlab/">GITLAB</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+        
+        <div class="wrapper">
+        	<header class="main-header">
+        <!-- Logo -->
+        <a href="../index.html" class="logo">
+        <p align="center" style="font-size:0.8em;"><b>Hybrid A&D Electronics</b></p>
+    </a>
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top">
+          <!-- Sidebar toggle button-->
+          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+          <section class="content-header">
+            <ol class="breadcrumb">
+              <li>
+                <a href="../index.html"><i class="fa fa-dashboard"></i>Hybrid Analog and Digital Electronics</a>
+              </li>
+              <li>
+                <a href="#">Even/Odd Parity Genrator </a>
+              </li>
+              <li class="active">Theory</li>
+            </ol>
+          </section>
+        </nav>
+      </header>
+            
+      <!-- Left side column. contains the logo and sidebar -->
+      <aside class="main-sidebar">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+          <!-- search form -->
+          <form action="#" method="get" class="sidebar-form">
+            <div class="input-group"></div>
+          </form>
+          <!-- /.sear ch form -->
+          <!-- sidebar menu: : style can be found in sidebar.less -->
+            <ul class="sidebar-menu">
+                <li class="treeview" id="aim">
+                    <a href="index.html">
+                        <i class="fa fa-files-o"></i> <span>Aim</span>
+
+                    </a>
+                </li>
+                <li class="treeview" id="theory">
+                    <a href="theory.html" >
+                        <i class="fa fa-files-o"></i>
+                        <span>Theory</span>
+                    </a>
+                </li>
+             <!--   <li class="treeview" id="numerical">
+                    <a href="numerical.php">
+                        <i class="fa fa-laptop"></i>
+                        <span>Numerical</span>
+                        <span class="pull-right-container">
+                        </span>
+                    </a>
+                </li>
+                <li class="treeview" id="program">
+                    <a href="program.php">
+                        <i class="fa fa-laptop"></i>
+                        <span>Program</span>
+                        <span class="pull-right-container">
+                        </span>
+                    </a>
+                </li> -->
+                <li class="treeview" id="pretest">
+                    <a href="pretest.html">
+                        <i class="fa fa-files-o"></i> <span>Pre Test</span>
+
+                    </a>
+                </li>
+                
+                <li class="treeview" id="procedure">
+                    <a href="procedure.html">
+                        <i class="fa fa-files-o"></i> <span>Procedure</span>
+                    </a>
+                </li>
+                <li class="treeview" id="simulation">
+                    <a href="simulation.html">
+                        <i class="fa fa-laptop"></i>
+                        <span>Simulation</span>
+                        <span class="pull-right-container">
+                        </span>
+                    </a>
+                </li>
+
+              
+                
+                <li class="treeview" id="posttest">
+                    <a href=" posttest.html">
+                        <i class=" fa fa-files-o">
+                    </i>
+                    <span>Post Test</span>
+                    <span class="pull-right-container">
+                    </span>
+                    </a>
+                </li>
+                <li class="treeview" id="ref">
+                    <a href="references.html">
+                        <i class="fa fa-files-o"></i>
+                        <span>References</span>
+                        <span class="pull-right-container">
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!-- /.sidebar -->
+      </aside>
+
+   
+            <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+                <section class="content-header">
+                <h1 align="center">
+                    Even/Odd Parity Generator <!-- Write experiment name here --> 
+                </h1>
+                </section>
+                    <!-- Main content -->
+                    <section class="content">
+                    <h3 style="margin-top:5%"> Theory </h3>
+                    <p style="font-size:130%; margin-top:2%">
+In digital electronic systems, during data transmission and processing, error may occur due to change of data bit (0 by 1 or vice versa). This change may be due to component malfunction or the electrical noise. One of the most widely used error detection techniques for transmission of data is Parity generating/checking. A parity bit is appended to the transmitted data by a parity generator and this bit is used to detect errors during the transmission of binary data.<br>
+A parity bit is an extra bit included with a binary message to make the number of 1’s either odd or even. We have an even parity, when the added bit is such that the total number of 1s in the data bit string becomes even, and an odd parity, when the added bit makes the total number of 1s in the data bit string odd. This added bit could be a ‘0’ or a ‘1’. <br></p>
+<center><img src="images/image1.png" style="width:700px;height:450px"></center>
+<p style="font-size:130%; margin-top:2%">
+As an example, if we have to add an even parity bit to 01000001 (the eight-bit ASCII code for ‘A’), it will be a ‘0’ and the number will become 001000001. If we have to add an odd parity bit to the same number, it will be a ‘l’ and the number will become 101000001. The odd parity bit is a complement of the even parity bit.<br>
+The message, including the parity bit, is transmitted and then checked at the receiving end for errors. An error is detected if the checked parity does not correspond to the one transmitted. The circuit that checks the parity in the receiver is called a paritychecker. A combined circuit or device consisting of parity generator and parity checker is commonly used in digital systems to detect the single bit errors in the transmitted data.<br>
+
+<h3>Parity Generator</h3>
+<p style="font-size:130%; margin-top:2%">Parity generator is a combinational circuit that accepts an (n-1)-bit stream data and generates the additional bit (termed as a parity bit) that is to be transmitted with the bit stream.The basic principle involved in the implementation of parity circuits is that sum of odd number of 1s is always 1 and sum of even number of 1s is always zero. Hence, XOR function, that produces 0 ( or 1) output when there are even ( or odd) number of 1s in the inputs, plays a pivotalrole in implementing such circuits. For example, an (n−1)-bit parity generator can be realized by implementing an (n−1)-bit XOR function. Both even and odd parity generators are discussed below.</p>
+
+<h3>Even Parity Generator</h3>
+<p style="font-size:130%; margin-top:2%">Let us assume that a 3-bit message is to be transmitted with an even parity bit. The three bits- A, B and C constitute the message and are the inputs to the circuit. The parity bit P is the output. For even parity, the bit P must be generated so as to make the total number of 1’s (including P) even. The circuit diagram of even parity generator shown in fig.1 along with the Boolean expression for even parity generator. In Table-1, the parity bit is 1 when the total number of 1’s is even as a whole (including parity bit).</p>
+
+<center><img src="images/image2.png " style="width:900px; height:450px;"></center>
+
+
+ <h3>Odd Parity Generator</h3>
+ <p style="font-size:130%; margin-top:2%">The three inputs- A, B and C produces P - the output parity bit, so as to make the total number of 1’s (including P) odd. The circuit diagram of odd parity generator shown in fig.2 along with the Boolean expression for odd parity generator.In Table-2, the parity bit is 1 when the total number of 1’s is odd as a whole (including parity bit).<br></p>
+	
+<center><img src="images/image3.png" style="width:1050px;height:500px"></center>
+  
+ 
+ <h3>APPLICATIONS AND LIMITATIONS OF PARITY GENERATOR</h3>
+ <p style="font-size:130%; margin-top:2%"> 
+
+	<b>&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;</b>The parity bit is used in applications where a simple error detector is needed and the transmission can be repeated if an error occurs.<br>
+	<b>&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;</b>This method needs only a single bit to detect errors, which can increase the number of transmissions within a period. <br>
+ 	<b>&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;</b>The most important application is in serial data transmission. It is based on a common format of 7 or 8 data bits, an even parity bit, and one or two stop bits. <br>
+	<b>&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;</b>Other applications of parity bits are SCSI buses, PCI buses, and many microprocessor instructions caches. Because the L-cache data is just a copy of main memory, it can be disregarded and re-fetched if it is found to be corrupted.<br>
+	</b>This simple parity code suffers from two limitations.<br>
+	<b>&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;</b>Firstly, the addition of a single parity bit cannot be used to detect two-bit errors. <br>
+ 	<b>&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;</b>Secondly, the single-bit parity code cannot be used to localize or identify the error bit even if one bit is in error. If a binary stream with errors is received, the receiver must discard it. <br>
+<br>
+<h3>Pin Diagram of IC-7486 and IC-7404.</h3></P>
+                     <center><img src="images/image4.png" style="width:300px;height:300px">
+                     <img src="images/image5.png" style="width:300px;height:300px"></center>
+                    </p>
+                    <!--Theory of experiment -->
+                    </p>
+                </section>
+            <!-- /.content -->
+            </div>
+            <footer class="main-footer">
+                <h4 align="center">Lab contributed by M.J.P. Rohilkhand University, Bareilly <!-- Institute Name --> </h4>
+            </footer>
+        </div>
+        
+    </body>
+</html>
+
+<!-- ./wrapper -->
+<!-- jQuery 2.2.3 -->
+<script src="../../plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+<!-- Slimscroll -->
+<script src="../../plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="../../plugins/fastclick/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/app.min.js"></script>

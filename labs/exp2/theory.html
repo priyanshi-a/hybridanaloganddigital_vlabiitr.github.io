@@ -1,0 +1,336 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Virtual Labs </title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <!-- Bootstrap 3.3.6 -->
+        <link rel="stylesheet" href="../../bootstrap/css/bootstrap.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../../dist/css/AdminLTE.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
+        <script>
+            window.onload = function () {
+                document.getElementById("theory").className = "active treeview";
+            }
+        </script>
+		
+    </head>
+
+    <body class="hold-transition skin-blue sidebar-mini">
+        <!--Navigation Bar-->
+<div class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://iitb.ac.in"><span><img src="images/iitb_logo_30dpi.png"></span></a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/">HOME</a>
+        </li>
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/labs/labs.html">LABS</a>
+        </li>
+        <!--<li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/Syllabus_Matrix/syllabus.html">SYLLABUS</a>
+        </li>
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/L1-Form/idea.php">CONTRIBUTE</a>
+        </li>
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/vlab_tool/index.php ">LAB TOOL</a>
+        </li>
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/wiki/doku.php">WIKI</a>
+        </li> -->
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/gitlab/">GITLAB</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+        
+        <div class="wrapper">
+        	<header class="main-header">
+        <!-- Logo -->
+        <a href="../index.html" class="logo">
+        <p align="center" style="font-size:0.8em;"><b>Hybrid A&D Electronics</b></p>
+    </a>
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top">
+          <!-- Sidebar toggle button-->
+          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+          <section class="content-header">
+            <ol class="breadcrumb">
+              <li>
+                <a href="../index.html"><i class="fa fa-dashboard"></i>Hybrid Analog and Digital Electronics </a>
+              </li>
+              <li>
+                <a href="#">Mathematical operations using Op-Amp </a>
+              </li>
+              <li class="active">Theory</li>
+            </ol>
+          </section>
+        </nav>
+      </header>
+            
+      <!-- Left side column. contains the logo and sidebar -->
+      <aside class="main-sidebar">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+          <!-- search form -->
+          <form action="#" method="get" class="sidebar-form">
+            <div class="input-group"></div>
+          </form>
+          <!-- /.sear ch form -->
+          <!-- sidebar menu: : style can be found in sidebar.less -->
+            <ul class="sidebar-menu">
+                <li class="treeview" id="aim">
+                    <a href="index.html">
+                        <i class="fa fa-files-o"></i> <span>Aim</span>
+
+                    </a>
+                </li>
+                <li class="treeview" id="theory">
+                    <a href="theory.html" >
+                        <i class="fa fa-files-o"></i>
+                        <span>Theory</span>
+                    </a>
+                </li>
+             <!--   <li class="treeview" id="numerical">
+                    <a href="numerical.php">
+                        <i class="fa fa-laptop"></i>
+                        <span>Numerical</span>
+                        <span class="pull-right-container">
+                        </span>
+                    </a>
+                </li>
+                <li class="treeview" id="program">
+                    <a href="program.php">
+                        <i class="fa fa-laptop"></i>
+                        <span>Program</span>
+                        <span class="pull-right-container">
+                        </span>
+                    </a>
+                </li> -->
+                <li class="treeview" id="pretest">
+                    <a href="pretest.html">
+                        <i class="fa fa-files-o"></i> <span>Pre Test</span>
+
+                    </a>
+                </li>
+                
+                <li class="treeview" id="procedure">
+                    <a href="procedure.html">
+                        <i class="fa fa-files-o"></i> <span>Procedure</span>
+                    </a>
+                </li>
+                <li class="treeview" id="simulation">
+                    <a href="simulation.html">
+                        <i class="fa fa-laptop"></i>
+                        <span>Simulation</span>
+                        <span class="pull-right-container">
+                        </span>
+                    </a>
+                </li>
+
+              
+                
+                <li class="treeview" id="posttest">
+                    <a href=" posttest.html">
+                        <i class=" fa fa-files-o">
+                    </i>
+                    <span>Post Test</span>
+                    <span class="pull-right-container">
+                    </span>
+                    </a>
+                </li>
+                <li class="treeview" id="ref">
+                    <a href="references.html">
+                        <i class="fa fa-files-o"></i>
+                        <span>References</span>
+                        <span class="pull-right-container">
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!-- /.sidebar -->
+      </aside>
+
+   
+            <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+                <section class="content-header">
+                <h1 align="center">
+                    Mathematical operations using Op-Amp <!-- Write experiment name here --> 
+                </h1>
+                </section>
+                    <!-- Main content -->
+                    <section class="content">
+                    <h3 style="margin-top:5%"> Theory </h3>
+					
+                    <p style="font-size:130%; margin-top:2%">
+An operational amplifier is an amplifier which has high open loop gain, very high input impedance, very low output impedance and large bandwidth. This amplifier is a direct coupled device with differential inputs and a single ended output. The amplifier responds only to the difference voltage between the two input terminals, not to their common potential. A positive going signal at the inverting input produces a negative going signal at the output whereas the same signal at the non-inverting input produces a positive going output. Internal diagram of an op-amp is shown in Fig. 1. </p>
+
+<center><img src="images/image 1.png" style="width:550px;height:400px">
+<figcaption style="font-size:130%;"><b> Fig.1- Internal diagram of Op Amp </b></figcaption></center><br><br>
+
+<p style="font-size:130%;">With a difference input voltage V<sub>in</sub> the output voltage V<sub>o</sub> will be AV<sub>in</sub> where A is the gain of the amplifier. Both input terminals of the amplifier will always be used, regardless of the application. The output signal is single ended and is referred to the ground, thus bipolar (±) power supplies are used.</p>
+<p style="font-size:130%;">The op-amp is a versatile device that can be used to amplify d.c. as well as a.c. input signals and was originally designed to perform mathematical operations such as addition, subtraction, multiplication, division, integration and differentiation. Thus the name operational amplifier stems from its original use for these mathematical operations and is abbreviated to op-amp.</p>
+<p style="font-size:130%;">IC 741 usually called as op-amp 741 is 8 pin dual in line package (DIP) integrated circuit consists of 8 pins as shown in Fig. 2. Terminals 2 and 3 are called input terminals. Signal applied to terminal 2 is arrived at the output terminal with the negative sign hence it is called inverting terminal while the signal applied to the terminal 3 is arrived with same sign at the output hence it is called non-inverting terminal. Power suppliesof +15V and -15V are applied at terminals 7 and 4 respectively. The output is obtained at the terminal 6. Terminal 1 is offset null because it has no use in general operations. The name op-amp 741 is given to this integrated circuit as it is clear from its pin configuration that there are 7 active pins having  4 input terminals(2, 3, 4 and 7) and one output terminal (6<sup>th</sup> terminal).</p>
+
+<center><img src="images/image 2(2).png" style="width:600px;height:300px">
+<figcaption style="font-size:130%; margin-left:0%"><b> Fig.2- Pin diagram of an op amp IC 741 </b></figcaption></center>
+
+<h3>Adder</h3>
+
+<p style="font-size:130%;">In inverting configuration of op-amp when the three inputs V<sub>1</sub>, V<sub>2</sub> and V<sub>3</sub> are applied at the inverting terminal then they depending upon the feedback resistance R<sub>f</sub> and the input resistors R<sub>1</sub>, R<sub>2</sub> and R<sub>3</sub> can be used as a summing amplifier.<br>
+Applying Kirchhoff's law at the node V<sub>2</sub>, we can write</p>
+
+<center><p style="font-size:130%;">I<sub>1</sub> + I<sub>2</sub> + I<sub>3</sub> = I<sub>B2</sub> +I<sub>F</sub></center></p>
+<p style="font-size:130%;">since I<sub>B2</sub> = 0 amp<br> 
+<center><p style="font-size:130%;">(V<sub>1</sub>/R<sub>1</sub>) + (V<sub>2</sub>/R<sub>2</sub>) + (V<sub>3</sub>/R<sub>3</sub>) = –V<sub>o</sub>/R<sub>F</sub></center>
+<p style="font-size:130%;">If R<sub>1</sub> = R<sub>2</sub> = R<sub>3</sub> =R,   then<br>
+
+<center>
+<table style="font-size:130%;width:150px;">
+<tr>
+ <td rowspan="2">V<sub>0</sub>=</td>
+ <td style="border-bottom:1px solid black; text-align:center">-R<sub>f</sub></td>
+ <td rowspan="2">(V<sub>1</sub>+V<sub>2</sub>+V<sub>3</sub>)</td>
+ </tr>
+ <tr>
+ <td style="text-align:center;">R<sub>i</sub></td>
+ </tr>
+ </table>
+</center>
+
+<p style="font-size:130%;">It means the output voltage is proportional to the sum of the input voltage. In case if the feedback resistance is equal to the input resistance then the output will be equal to the negative sum of the input signals. Hence the circuit is called the summing amplifier. The practical circuit of op-amp as adder is shown in Fig. 3.</p>
+
+<center><img src="images/image 3.png" style="width:700px;height:350px">
+<figcaption style="font-size:130%;"><b> Fig.3- Practical circuit of an op-amp used for addition </b></figcaption></center>
+
+<h3>Subtractor</h3>
+
+<p style="font-size:130%;"> A basic differential amplifier can be used as a subtractor when input signals are applied at the two input terminals of op-amp i.e. one at inverting and other at non inverting terminal, then output is given by the difference of two input signals. The practical circuit of the op-amp as subtractor is given in Fig. 4. The output of the amplifier in this case can be written as</p>
+
+
+<center>
+<table style="font-size:130%;width:120px;">
+<tr>
+ <td rowspan="2">V<sub>0</sub>=</td>
+ <td style="border-bottom:1px solid black; text-align:center">-R<sub>f</sub></td>
+ <td rowspan="2">(V<sub>1</sub>-V<sub>2</sub>)</td>
+ </tr>
+ <tr>
+ <td style="text-align:center;">R<sub>i</sub></td>
+ </tr>
+ </table>
+</center>
+<br>
+<center>
+<table style="font-size:130%;width:120px;">
+<tr>
+ <td rowspan="2">V<sub>0</sub>=</td>
+ <td style="border-bottom:1px solid black; text-align:center">R<sub>f</sub></td>
+ <td rowspan="2">(V<sub>2</sub>-V<sub>1</sub>)</td>
+ </tr>
+ <tr>
+ <td style="text-align:center;">R<sub>i</sub></td>
+ </tr>
+ </table>
+</center>
+
+<center><img src="images/image 4.png" style="width:700px;height:380px">
+<figcaption style="font-size:130%;"><b> Fig.4- Practical circuit of an op-amp used for subtraction </b></figcaption></center>
+
+<h3>Multiplication by a constant</h3>
+
+<p style="font-size:130%;">The practical circuit of the op-amp as multiplication is given in Fig. 5. When the feedback resistance R<sub>f</sub> and input resistance R<sub>1</sub> are so chosen to give a constant value K<sub>m</sub> (R<sub>f</sub> /R<sub>1</sub>) then the input given to the non-inverting terminal of op-amp is multiplied at the output by this constant K<sub>m</sub>, therefore the output at the terminal 6 is given by</p>
+
+<center>
+<table style="font-size:130%;width:105px;">
+<tr>
+ <td rowspan="2">V<sub>0</sub>= (</td>
+ <td style="border-bottom:1px solid black; text-align:center">R<sub>f</sub></td>
+ <td rowspan="2"> )V<sub>1</sub></td>
+ </tr>
+ <tr>
+ <td style="text-align:center;">R<sub>1</sub></td>
+ </tr>
+ </table>
+</center>
+<br>
+<center><p style="font-size:130%;">V<sub>o</sub>= K<sub>m</sub> V<sub>in</sub></p></center>
+<p style="font-size:130%;">where K<sub>m</sub>=(R<sub>f</sub>/R<sub>1</sub>)</p>
+
+<center><img src="images/image 5.png" style="width:700px;height:400px">
+<figcaption style="font-size:130%;"><b> Fig.5- Practical circuit of an op-amp used for multiplication </b></figcaption></center>
+
+<!-- <h3>Division by a constant</h3>
+
+<p style="font-size:130%; "> When the feedback resistance R<sub>f</sub> and input resistance R<sub>1</sub> are so chosen that the ratio R<sub>f</sub>/R<sub>1</sub> give a fractional value then the input voltage given to inverting terminal of op-amp is divided at the output by this division factor K<sub>d</sub> (R<sub>1</sub>/R<sub>f</sub>). The circuit for this operation is shown in Fig. 6. The output is obtained at terminal 6 of op-amp by D.M.M. with respect to ground.</p>
+
+<center>
+<table style="font-size:130%;width:85px;">
+<tr>
+ <td rowspan="2">V<sub>0</sub>=</td>
+ <td style="border-bottom:1px solid black; text-align:center">-R<sub>f</sub></td>
+ <td rowspan="2"> V<sub>1</sub></td>
+ </tr>
+ <tr>
+ <td style="text-align:center;">R<sub>1</sub></td>
+ </tr>
+ </table>
+</center>
+<br>
+
+<center><p style="font-size:130%;">V<sub>o</sub> = -V<sub>in</sub>/K<sub>d</sub></p></center>
+<p style="font-size:130%;">where K<sub>d</sub>= R<sub>1</sub>/R<sub>f</sub></p>
+
+<center><img src="images/image 6.png " style="width:700px;height:350px;">
+<figcaption style="font-size:130%;"><b> Fig.6- Practical circuit of an op-amp used for division </b></figcaption></center>
+
+
+</p> -->
+
+                    </p>
+                </section>
+            <!-- /.content -->
+            </div>
+            <footer class="main-footer">
+                <h4 align="center">Lab contributed by M.J.P. Rohilkhand University, Bareilly <!-- Institute Name --> </h4>
+            </footer>
+        </div>
+        
+    </body>
+</html>
+
+<!-- ./wrapper -->
+<!-- jQuery 2.2.3 -->
+<script src="../../plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+<!-- Slimscroll -->
+<script src="../../plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="../../plugins/fastclick/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/app.min.js"></script>

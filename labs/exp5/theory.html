@@ -1,0 +1,302 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Virtual Labs </title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <!-- Bootstrap 3.3.6 -->
+        <link rel="stylesheet" href="../../bootstrap/css/bootstrap.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../../dist/css/AdminLTE.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
+        <script>
+            window.onload = function () {
+                document.getElementById("theory").className = "active treeview";
+            }
+        </script>
+    </head>
+
+    <body class="hold-transition skin-blue sidebar-mini">
+        <!--Navigation Bar-->
+<div class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://iitb.ac.in"><span><img src="images/iitb_logo_30dpi.png"></span></a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/">HOME</a>
+        </li>
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/labs/labs.html">LABS</a>
+        </li>
+        <!--<li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/Syllabus_Matrix/syllabus.html">SYLLABUS</a>
+        </li>
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/L1-Form/idea.php">CONTRIBUTE</a>
+        </li>
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/vlab_tool/index.php ">LAB TOOL</a>
+        </li>
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/vlabs-dev/wiki/doku.php">WIKI</a>
+        </li> -->
+        <li class="active">
+          <a href="http://vlabs.iitb.ac.in/gitlab/">GITLAB</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+        
+        <div class="wrapper">
+        	<header class="main-header">
+        <!-- Logo -->
+        <a href="../index.html" class="logo">
+        <p align="center" style="font-size:1em;"><b>Lab Name</b></p>
+    </a>
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top">
+          <!-- Sidebar toggle button-->
+          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+          <section class="content-header">
+            <ol class="breadcrumb">
+              <li>
+                <a href="../index.html"><i class="fa fa-dashboard"></i>Hybrid Analog and Digital Electronics Lab</a>
+              </li>
+              <li>
+                <a href="#">Bistable Multivibrator using 555 Timer IC </a>
+              </li>
+              <li class="active">Theory</li>
+            </ol>
+          </section>
+        </nav>
+      </header>
+            
+      <!-- Left side column. contains the logo and sidebar -->
+      <aside class="main-sidebar">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+          <!-- search form -->
+          <form action="#" method="get" class="sidebar-form">
+            <div class="input-group"></div>
+          </form>
+          <!-- /.sear ch form -->
+          <!-- sidebar menu: : style can be found in sidebar.less -->
+            <ul class="sidebar-menu">
+                <li class="treeview" id="aim">
+                    <a href="index.html">
+                        <i class="fa fa-files-o"></i> <span>Aim</span>
+
+                    </a>
+                </li>
+                <li class="treeview" id="theory">
+                    <a href="theory.html" >
+                        <i class="fa fa-files-o"></i>
+                        <span>Theory</span>
+                    </a>
+                </li>
+             <!--   <li class="treeview" id="numerical">
+                    <a href="numerical.php">
+                        <i class="fa fa-laptop"></i>
+                        <span>Numerical</span>
+                        <span class="pull-right-container">
+                        </span>
+                    </a>
+                </li>
+                <li class="treeview" id="program">
+                    <a href="program.php">
+                        <i class="fa fa-laptop"></i>
+                        <span>Program</span>
+                        <span class="pull-right-container">
+                        </span>
+                    </a>
+                </li> -->
+                <li class="treeview" id="pretest">
+                    <a href="pretest.html">
+                        <i class="fa fa-files-o"></i> <span>Pre Test</span>
+
+                    </a>
+                </li>
+                
+                <li class="treeview" id="procedure">
+                    <a href="procedure.html">
+                        <i class="fa fa-files-o"></i> <span>Procedure</span>
+                    </a>
+                </li>
+                <li class="treeview" id="simulation">
+                    <a href="simulation.html">
+                        <i class="fa fa-laptop"></i>
+                        <span>Simulation</span>
+                        <span class="pull-right-container">
+                        </span>
+                    </a>
+                </li>
+
+              
+                
+                <li class="treeview" id="posttest">
+                    <a href=" posttest.html">
+                        <i class=" fa fa-files-o">
+                    </i>
+                    <span>Post Test</span>
+                    <span class="pull-right-container">
+                    </span>
+                    </a>
+                </li>
+                <li class="treeview" id="ref">
+                    <a href="references.html">
+                        <i class="fa fa-files-o"></i>
+                        <span>References</span>
+                        <span class="pull-right-container">
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!-- /.sidebar -->
+      </aside>
+
+   
+            <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+                <section class="content-header">
+                <h1 align="center">
+                    Bistable Multivibrator using 555 Timer IC <!-- Write experiment name here --> 
+                </h1>
+                </section>
+                    <!-- Main content -->
+                    <section class="content">
+                    <h3 style="margin-top:5%"> Theory </h3>
+					<h3> Multivibrator</h3>
+                    <p style="font-size:130%; margin-top:2%"> 
+An electronic circuit that generates square waves or other non-sinusoidal waves such as rectangular, saw-tooth waves is known as multivibrator. A multivibrator is a switching circuit which depends on positive fedback. It is basically two stage amplifier with output of one feedback to the input of other as shown in Figure (1). The circuit operates in two states (viz ON and OFF) controlled by circuit conditions .Each amplifier stage supplies feedback to the other in such a manner that will drive the transistor of one stage to saturation (ON state) and the other to cut off (OFF state).<br>
+<p style="font-size:130%;"> After a certain time controlled by circuit conditions, the action is reserved i.e. saturated stage is driven to cut off and the cutoff stage is driven to saturation. The output can be taken across either stage and may be rectangular or square wave depending upon the circuit conditions. Fig(1) shows the block diagram of a multivibrator . It is a two stage amplifier with 100% positive feedback<br>
+
+<center><img src="images/image 1.png" style="align:left;width:800px;height:300px">
+<figcaption style="font-size:130%;"><b> Fig.1- Block diagram of multivibrator </b></figcaption></center>
+
+<p style="font-size:130%;">Suppose output is taken across the transistor Q<sub>2</sub>.<br>
+At any particular instant, one transistor is on and conducts I<sub>c(sat)</sub> while the other is off . Suppose Q<sub>2</sub> is ON and Q<sub>1</sub> is OFF. The collector current in Q<sub>2</sub> will be I<sub>c(sat)</sub> as shown in figure (2) . This condition will prevail for a time (bc in this case) determined by circuit conditions. After this time, transistor Q<sub>2</sub> is cut off and Q<sub>1</sub> is turned ON. The collector current in Q<sub>2</sub> is now I<sub>CEO</sub> as shown. The circuit will stay in this condition for a time delay.
+</p>
+
+<center><img src="images/image 2.png" style="align:left;width:700px;height:300px">
+<figcaption style="font-size:130%;"><b> Fig.2- Collector current with respect to time </b></figcaption></center><br>
+
+<p style="font-size:130%;">Again Q<sub>2</sub> is turned in Q<sub>1</sub> is driven to cutoff. In this way, the output will be a square wave.  At any particular instant, one transistor is ON and other if OFF. After a certain time depending upon the circuit component, the stages reverse their conditions- the conducting stage suddenly cutoff and non conducting stage suddenly starts to conduct. The two possible states of a multivibrator are-</p>
+
+<center>
+<table style="font-size:130%;width:600px;height:100px">
+<tr>
+<th></th>
+ <th>ON</th>
+ <th>OFF</th>
+ </tr>
+ <tr>
+ <th>First State</th>
+ <td>Transistor 1</td>
+ <td>Transistor 2</td>
+ </tr>
+ <tr>
+ <th>Second State</th>
+ <td>Transistor 2</td>
+ <td>Transistor 1</td>
+ </tr>
+ </table>
+</center>
+<br>
+
+
+<h3>Types of Multivibrator</h3>
+<p style="font-size:130%;"> It is a circuit designed to have zero, one, or two stable output states. A multivibrator circuit oscillates between a “HIGH” state and a “LOW” state producing a continuous output. There are three types of multivibrators:<br>
+Depending upon the manner in which the two stages interchange their states, the multivibrator are classified as<br>
+<p style="font-size:130%;">(i)  Astable Multivibrator (or Free-Running Multivibrators)<br>
+(ii) Monostable Multivibrator (or One-Shot)<br>
+(iii) Bistable Multivibrator (or Flip- Flop)
+</p>
+
+<p style="font-size:130%;">Fig (3) shows the input /output relations for the three types of multivibrators.</p>
+<center><img src="images/image 3.png" style="align:left;width:800px;height:550px">
+<figcaption style="font-size:130%;"><b> Fig.3- Input and output waveforms of multivibrator</b></figcaption></center><br>
+
+
+<h3>(i)Astable multivibrator</h3>
+<p style="font-size:130%;"> The astable multivibrator alternates automatically between the two states and remain in each for a time dependent upon the circuit constants. Thus it is just an oscillator since it requires no external pulse for its operation. As it continuously produces the square wave output, it is often referred to as a free running multivibrator</p>
+
+<h3>(ii)Monostable multivibrator</h3>
+<p style="font-size:130%;">The monostable multivibrator has one state stable and one quasi-stable state. The application of input pulse triggers the circuit into its quasi-stable state, in which it remains for a period determined by circuit constants. After this period of time, the circuit returns to its initial stable state, the process is repeated upon the application of each trigger pulse. Since the monostable multivibrator produces a single output pulse for each input trigger pulse, it is generally called one-shot multivibrator.   </p>
+
+<h3>(iii)Bistable multivibrator</h3>
+<p style="font-size:130%;">The bistable multivibrator has both the two states stable. It requires the application of an external triggering pulse to change the operation from either one state to other. It is also known as flip-flop multivibrator because of the two possible states it can assume.   </p>
+
+<br>
+<p style="font-size:130%;">Multivibrators can be easily constructed from discrete components to produce relaxation oscillators for generating basic square wave output waveforms. But there are also dedicated IC’s especially designed to accurately produce the required output waveform with the addition of just a few extra timing components. One such device that has been around since the early days of IC’s and has itself become something of an industry “standard” is the 555 Timer Oscillators which is more commonly called the “555 Timer”. The 555 timer name comes from the fact that there are three 5 KΩ resistors connected together internally producing a voltage divider network between the supply voltage and ground.  Pin Diagram and Block diagram representing the internal circuitry of the 555 Timer are shown in Figure (4)<br>
+
+<center>
+<img src="images/3.gif" style="align:right;width:450px;height:400px">
+<figcaption style="font-size:130%;"><b> Fig.4- Pin Diagram and internal circuitry of the 555 Timer IC </b></figcaption></center>
+
+
+<h3>Pin configuration of 555 timer IC</h3>
+
+<p style="font-size:130%; margin-top:2%"> <b>Pin 1: Ground:</b> The ground pin connects the 555 timer to the 0V supply.<br>
+ <b>Pin 2: Trigger Terminal: </b>The trigger pin is used to feed the trigger input <br>
+<b>Pin 3: Output Terminal: </b>Output of the timer is avail¬able at this pin.<br>
+<b>Pin 4: Reset Terminal: </b>Whenever the timer IC is to be reset or disabled, a negative pulse is applied to pin 4, and thus is named as reset terminal. <br>
+
+<b>Pin 5: Control Voltage Terminal: </b>The threshold and trigger levels are controlled using this pin. <br>
+<b>Pin 6: Threshold Terminal: </b>This is the non-inverting input terminal of comparator 1, which compares the voltage applied to the terminal with a reference voltage of 2/3 VCC. <br>
+<b>Pin 7: Discharge Terminal: </b>This pin is connected internally to the collector of transistor and mostly a capacitor is connected between this terminal and ground. It is called discharge terminal <br>
+<b>Pin 8: Supply Terminal: </b>A supply voltage of + 5 V to + 18 V is applied to this terminal with respect to ground (pin 1).<br>
+</p>
+
+
+
+<h3>Timer 555 as Bistable Multivibrator </h3>
+<p style="font-size:130%; margin-top:2%">
+Circuit diagram for bistable multivibrator is shown in Figure (5). In the circuit the resistances R3 and R4 divide the voltage. Because R3 and R4 create a voltage that is exactly in the middle of the dead zone of the Schmitt Trigger hysteresis, the output of the 555 is stable. It will hold the last state it was set in indefinitely while there is power. The capacitor C1 is at the same voltage as the output of the timer. When the toggle button is pushed the capacitor will put the same voltage on the input, causing the 555 (an inverter), to flip state. The capacitor will quickly charge or discharge to the voltage level that the network of R3, R4, R5 now presents. Since R5 is X10 larger than R3 and R4 this voltage will still be in the dead zone of the Schmitt Trigger and the output of the 555 is stable in its new state. <br>
+When the toggle button is released the capacitor will again charge or discharge to its new voltage. The capacitor is being used as a memory to compliment the 555. It also makes a fairly convenient de-bounce for the button.
+</p>
+<center><img src="images/image 7(2).png" style="align:left;width:500px;height:400px">
+<figcaption style="font-size:130%;"><b> Fig.5- Circuit diagram for Bistable Multivibrator using the 555 Timer IC </b></figcaption></center>
+
+                  <!--Theory of experiment -->
+                    </p>
+                </section>
+            <!-- /.content -->
+            </div>
+            <footer class="main-footer">
+                <h4 align="center">Lab contributed by M.J.P. Rohilkhand University, Bareilly <!-- Institute Name --> </h4>
+            </footer>
+        </div>
+        
+    </body>
+</html>
+
+<!-- ./wrapper -->
+<!-- jQuery 2.2.3 -->
+<script src="../../plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+<!-- Slimscroll -->
+<script src="../../plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="../../plugins/fastclick/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/app.min.js"></script>
